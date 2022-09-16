@@ -1,45 +1,105 @@
-script of satire website in html
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>The Satire Site</title>
-
-    <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>The Satire Delivery Service</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-8">
-            <h1>The Satire Site</h1>
-            <p>
-                Welcome to The Satire Site, your one stop shop for all things satirical. We've got all the latest news,
-                opinion, and commentary that you need to keep up with the world of satire.
-            </p>
-            <p>
-                So sit back, relax, and enjoy the satire!
-            </p>
-        </div>
-        <div class="col-sm-4">
-            <h3>Latest Satire</h3>
-            <ul>
-                <li><a href="#">The Top 10 Most Ridiculous Things Trump Has Said</a></li>
-                <li><a href="#">10 Reasons Why Hillary Clinton Is The Worst Candidate Ever</a></li>
-                <li><a href="#">5 Ways To Make Your Facebook Feed Even More Annoying</a></li>
-            </ul>
-        </div>
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          The Satire Delivery Service
+        </h1>
+        <h2 class="subtitle">
+          Bringing the funny to you!
+        </h2>
+      </div>
     </div>
-</div>
+  </section>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-mobile is-centered">
+        <div class="column is-half">
+          <form>
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="e.g. Alex Smith">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input class="input" type="email" placeholder="e.g. alex@smith.com">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Address</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="e.g. 123 Main St">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">City</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="e.g. New York">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">State</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="e.g. NY">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Zip</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="e.g. 10001">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Card Number</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="e.g. 1234 5678 9012 3456">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Expiration Date</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="e.g. 01/20">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">CVV</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="e.g. 123">
+              </div>
+            </div>
+
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link">Submit</button>
+              </div>
+              <div class="control">
+                <button class="button is-text">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
