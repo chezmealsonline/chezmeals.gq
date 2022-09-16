@@ -1,70 +1,72 @@
+Write a website for a YouTube influencer in HTML,  CSS, and JAVASCRIPT
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Add a gray background color with some padding */
 body {
-    font-family: Arial;
-    padding: 20px;
-    background: #f1f1f1;
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
 }
 
 /* Header/Blog Title */
 .header {
-    padding: 30px;
-    text-align: center;
-    background: white;
-}
-
-.header h1 {
-    font-size: 50px;
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
 }
 
 /* Style the top navigation bar */
 .topnav {
-    overflow: hidden;
-    background-color: #333;
+  overflow: hidden;
+  background-color: #333;
 }
 
 /* Style the topnav links */
 .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 /* Change color on hover */
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
-    float: left;
-    width: 75%;
+  float: left;
+  width: 75%;
 }
 
 /* Right column */
 .rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
+  float: left;
+  width: 25%;
+  padding-left: 20px;
 }
 
 /* Fake image */
 .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
 }
 
 /* Add a card effect for articles */
@@ -76,73 +78,72 @@ body {
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Footer */
 .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
+   padding: 20px;
+   text-align: center;
+   background: #ddd;
+   margin-top: 20px;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-        width: 100%;
-        padding: 0;
-    }
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
 }
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>The Restaurant</h1>
-  <p>The best food in town!</p>
+  <h2>My YouTube Channel</h2>
 </div>
 
 <div class="topnav">
   <a href="#">Home</a>
-  <a href="#">Menu</a>
   <a href="#">About</a>
+  <a href="#">Contact</a>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>The Restaurant</h2>
-      <h5>Welcome to The Restaurant, the best place in town for food! We pride ourselves in using the freshest, finest ingredients to create our mouth-watering dishes.</h5>
+      <h2>ARTICLE 1</h2>
+      <h5>Title description, Dec 7, 2017</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Come in and try our daily specials, or choose from our menu of classics. We know you'll find something you love!</p>
+      <p>Some text..</p>
+      <p>Sunt in culpa duis aute irure dolor excepteur sint occaecat cupidatat non proident, sunt in culpa duis aute irure dolor.</p>
     </div>
     <div class="card">
-      <h2>Our Menu</h2>
-      <h5>Check out our delicious menu! We're sure you'll find something you'll love.</h5>
+      <h2>ARTICLE 2</h2>
+      <h5>Title description, Sep 2, 2017</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <p>We have a wide variety of food to choose from, so come in and try something new today!</p>
+      <p>Some text..</p>
+      <p>Sunt in culpa duis aute irure dolor excepteur sint occaecat cupidatat non proident, sunt in culpa duis aute irure dolor.</p>
     </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
-      <h2>About Us</h2>
-      <h5>The Restaurant is the best place in town for food! We pride ourselves in using the freshest, finest ingredients to create our mouth-watering dishes.</h5>
+      <h2>About Me</h2>
       <div class="fakeimg" style="height:100px;">Image</div>
-      <p>We are a family-owned and operated business, so you can be sure you're getting the best possible service when you come in.</p>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
     </div>
     <div class="card">
-      <h3>Follow Us</h3>
-      <p>Follow us on social media for the latest news and specials!</p>
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
     </div>
     <div class="card">
-      <h3>Contact Us</h3>
-      <p>The Restaurant<br>
-         123 Main Street<br>
-         Anytown, USA<br>
-         555-555-1234</p>
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
     </div>
   </div>
 </div>
